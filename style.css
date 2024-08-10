@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Arbutus Slab", serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 35px;
+    border-bottom: 2px solid #000;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+nav .logo img {
+    width: 120px;
+
+}
+
+nav .logo h1 {
+    font-size: 32px;
+}
+
+nav .menu_bars {
+    width: 20px;
+    cursor: pointer;
+}
+
+nav .buttons_container {
+    display: flex;
+    gap: 35px;
+}
+
+nav .buttons_container button {
+    width: 320px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav .buttons_container button img {
+    width: 25px;
+}
+
+nav .buttons_container .btn_access {
+    border: 2px solid #000;
+    background-color: #fffbfb;
+}
+
+nav .buttons_container .btn_register {
+    color: #fff;
+    background-color: #000000;
+}
+
+.menu_mobile {
+    position: fixed;
+    border-radius: 24px;
+    top: -800px;
+    right: 20px;
+    background-color: #fffbfb;
+    padding: 40px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid #000;
+    transition: all .4s;
+}
+
+.menu_mobile button {
+    width: 100%;
+    padding: 8px;
+    border-radius: 14px;
+    border: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu_mobile button img {
+    width: 20px;
+}
+
+.menu_mobile .btn_access {
+    border: 2px solid #000;
+    background-color: #fffbfb;
+}
+
+.menu_mobile .btn_register {
+    color: #fff;
+    background-color: #000000;
+}
+
+.menu_mobile #close {
+    width: 12px;
+    align-self: flex-end;
+}
+
+.display_menu {
+    top: 50px;
+}
+
+
+/*================== MOBILE ==================*/
+@media screen and (max-width: 480px) {
+    nav .buttons_container {
+        display: none;
+    }
+
+    nav .logo img {
+        width: 80px;
+    }
+
+    nav .logo h1 {
+        font-size: 22px;
+    }
+}
+
+/*================ TABLETS ================*/
+
+@media screen and (min-width: 481px) and (max-width: 760px) {
+    nav .buttons_container {
+        display: none;
+    }
+
+}
